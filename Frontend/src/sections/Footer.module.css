@@ -1,0 +1,112 @@
+.footer {
+  background-color: black;
+  color: #fff;
+  padding: 50px;
+  text-align: center;
+  position: fixed; /* Fixes the footer to the bottom */
+  left: 0; /* Aligns the footer to the left */
+  bottom: 0; /* Aligns the footer to the bottom */
+  width: 100%; /* Makes the footer full width */
+  z-index: 1000; /* Ensures the footer is above other content */
+  opacity: 0; /* Start hidden for fade-in effect */
+  animation: fadeIn 0.5s forwards; /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1; /* Fade to fully visible */
+  }
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footerLogo h2 {
+  margin: 0;
+}
+
+.footerAddress {
+  margin: 1.5% 0;
+}
+
+.footerAddress p {
+  margin: 5px 0;
+}
+
+.footerSocial {
+  list-style: none;
+  padding: 10px;
+  margin-right: 10%;
+  margin-top: -1.5%;
+}
+
+.footerLinks {
+  margin-bottom: 10px 0;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footerLinks li {
+  margin: 5px 0;
+}
+
+/* Link hover effect */
+.footerLinks a {
+  color: #fff; /* Default link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.footerLinks a:hover {
+  color: #ffcc00; /* Change color on hover */
+}
+
+.footerBottom {
+  border-top: 1px solid #444;
+  margin-right: 7.5%;
+  padding-top: 10px;
+  display: flex; /* Use flexbox for the bottom section */
+  justify-content: center; /* Center the text */
+  align-items: center; /* Center items vertically */
+  position: relative; /* Position relative for the button */
+}
+
+.footerBottom div {
+  flex: 1; 
+  text-align: center; 
+}
+
+.backToTopContainer {
+  position: absolute; 
+  right: 0; 
+}
+
+.backToTop {
+  background-color: black;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: transform 0.3s ease; 
+  animation: moveY 1s infinite alternate; 
+}
+
+.backToTop:hover {
+  transform: scale(1.1);
+}
+
+@keyframes moveY {
+  0% {
+    transform: translateY(0); 
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}

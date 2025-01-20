@@ -1,0 +1,49 @@
+
+.navbar {
+    background-color: black;
+    padding: 15px;
+  }
+
+  .navContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    margin: 0 15px;
+    position: relative; /* For the hover effect */
+  }
+  
+  .navItem {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for color and scaling */
+  }
+  
+  .navItem:hover {
+    color: #ffcc00; /* Change color on hover */
+    transform: scale(1.1); /* Slightly enlarge the link */
+  }
+  
+  .adminLogo {
+    width: 30px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+  }
+  
+  .adminLogo:hover {
+    transform: scale(1.1); /* Slightly enlarge the logo on hover */
+  }

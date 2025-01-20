@@ -1,0 +1,30 @@
+.emailContainer {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .emailIcon {
+    height: 5vh; /* Set the height of the icon */
+    width: 5vh; /* Set the width of the icon */
+    transition: color 0.5s ease; /* Smooth transition for color change */
+    margin-right: 10px; /* Space between the icon and the text */
+  }
+  
+  .emailIcon:hover {
+    color: red; /* Change icon color to red on hover */
+    transform: scale(1.1);
+  }
+  
+  .emailLink {
+    color:white; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size as needed */
+    transition: 0.5s ease;
+  }
+  
+  .emailLink:hover {
+    text-decoration: underline;
+    color: crimson;
+    transform: scale(1.1);
+
+  }
