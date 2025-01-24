@@ -47,3 +47,36 @@
   .adminLogo:hover {
     transform: scale(1.1); /* Slightly enlarge the logo on hover */
   }
+  
+.dropdownMenu {
+  position: absolute;
+  top: 100%; /* Position it below the profile icon */
+  right: 0; /* Align it to the right */
+  background-color: white; /* Background color of the dropdown */
+  border-radius: 5px; /* Rounded corners */
+  border: 1px solid #ccc; /* Border for the dropdown */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Shadow for the dropdown */
+  z-index: 1000; /* Ensure it appears above other elements */
+  opacity: 0; /* Start hidden */
+  visibility: hidden; /* Start hidden */
+  transform: translateY(-10px); /* Start slightly above */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Animation for dropdown */
+}
+
+.dropdownMenu.show {
+  opacity: 1; /* Fully visible */
+  visibility: visible; /* Make it visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+.dropdownItem {
+  display: block; /* Make the links block elements */
+  padding: 10px 20px; /* Padding for the links */
+  text-decoration: none; /* Remove underline */
+  color: black; /* Text color */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+.dropdownItem:hover {
+  background-color: #f0f0f0; /* Change background on hover */
+}
